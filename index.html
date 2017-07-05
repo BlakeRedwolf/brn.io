@@ -1,17 +1,17 @@
 <!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, initial-scale=1">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>BRN.IO | The portfolio of Blake</title>
-    <meta name="description" content="Blakes Portfolio">
-    <meta name="author" content="Blake Redwolf Nelson">
-    <link rel="shortcut icon" href="assets/ico/favicon.ico">
-    <link href="assets/css/bootstrap.css" rel="stylesheet">
-    <link href="assets/css/style.css" rel="stylesheet">
-    <link href="assets/css/font-awesome.min.css" rel="stylesheet">
+  <meta name="description" content="Blakes Portfolio">
+  <meta name="author" content="Blake Redwolf Nelson">
+  <link rel="shortcut icon" href="assets/ico/favicon.ico">
+  <link href="assets/css/bootstrap.css" rel="stylesheet">
+  <link href="assets/css/style.css" rel="stylesheet">
+  <link href="assets/css/font-awesome.min.css" rel="stylesheet">
+	<link href="assets/css/animations.css" rel="stylesheet">
 </head>
 <body>
 
@@ -25,12 +25,12 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
         </button>
-      <a class="navbar-brand" href="index.html">BRN.IO</a>
+      <a class="navbar-brand slideDown" href="index.html">BRN.IO</a>
     </div>
     <div class="navbar-collapse collapse">
-      <ul class="nav navbar-nav navbar-right">
+      <ul class="nav navbar-nav navbar-right slideDown">
         <li class="active"><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
+        <li class="" id="aboutbtn"><a href="about.html">About</a></li>
           <li><a href="#works">Works</a></li>
        </ul>
       </div><!--/.nav-collapse -->
@@ -41,8 +41,8 @@
   <div class="container">
 	  <div class="row">
 		  <div class="col-lg-6 col-lg-offset-3">
-			  <h4>Hi, I'm</h4>
-			  <h1>Blake, </h1>
+			  <h2>Hi, I'm</h2>
+			  <h1>Blake</h1>
 			  <h4>ART DIRECTOR | WEB DESIGNER | MUSIC PRODUCER</h4>
 		  </div>
 	  </div><! --/row -->
@@ -52,24 +52,24 @@
 <section id="works"></section>
 	<div class="container">
 		<div class="row centered mt mb">
-			<h1>My Portfolio</h1>
+			<h1 class="slideUp">My Portfolio</h1>
 			
-			<div class="col-lg-4 col-md-4 col-sm-4 gallery">
+			<div class="col-lg-4 col-md-4 col-sm-4 gallery floating">
 				<a href="work.html"><img src="assets/img/portfolio/folio01.png" class="img-responsive"></a>
 			</div>
-			<div class="col-lg-4 col-md-4 col-sm-4 gallery">
+			<div class="col-lg-4 col-md-4 col-sm-4 gallery floating">
 				<a href="work.html"><img src="assets/img/portfolio/folio02.png" class="img-responsive"></a>
 			</div>
-			<div class="col-lg-4 col-md-4 col-sm-4 gallery">
+			<div class="col-lg-4 col-md-4 col-sm-4 gallery floating">
 				<a href="work.html"><img src="assets/img/portfolio/folio03.png" class="img-responsive"></a>
 			</div>
-			<div class="col-lg-4 col-md-4 col-sm-4 gallery">
+			<div class="col-lg-4 col-md-4 col-sm-4 gallery floating">
 				<a href="work.html"><img src="assets/img/portfolio/folio04.png" class="img-responsive"></a>
 			</div>
-			<div class="col-lg-4 col-md-4 col-sm-4 gallery">
+			<div class="col-lg-4 col-md-4 col-sm-4 gallery floating">
 				<a href="work.html"><img src="assets/img/portfolio/folio05.png" class="img-responsive"></a>
 			</div>
-			<div class="col-lg-4 col-md-4 col-sm-4 gallery">
+			<div class="col-lg-4 col-md-4 col-sm-4 gallery floating">
 				<a href="work.html"><img src="assets/img/portfolio/folio06.png" class="img-responsive"></a>
 			</div>
 		</div><! --/row -->
@@ -79,22 +79,22 @@
 		<div class="container">
 			<div class="row centered">
 				<div class="col-lg-2">
-					<a href="#"><i class="fa fa-dribbble"></i></a>
+					<a href="#"><i class="fa fa-dribbble" id="fa-float"></i></a>
 				</div>
 				<div class="col-lg-2">
-					<a href="#"><i class="fa fa-facebook"></i></a>
+					<a href="#"><i class="fa fa-facebook" id="fa-float2"></i></a>
 				</div>
 				<div class="col-lg-2">
-					<a href="#"><i class="fa fa-twitter"></i></a>
+					<a href="#"><i class="fa fa-twitter" id="fa-float3"></i></a>
 				</div>
 				<div class="col-lg-2">
-					<a href="#"><i class="fa fa-linkedin"></i></a>
+					<a href="#"><i class="fa fa-linkedin" id="fa-float4"></i></a>
 				</div>
 				<div class="col-lg-2">
-					<a href="#"><i class="fa fa-instagram"></i></a>
+					<a href="#"><i class="fa fa-instagram" id="fa-float5"></i></a>
 				</div>
 				<div class="col-lg-2">
-					<a href="#"><i class="fa fa-tumblr"></i></a>
+					<a href="#"><i class="fa fa-tumblr" id="fa-float6"></i></a>
 				</div>
 			
 			</div><! --/row -->
@@ -104,14 +104,14 @@
   <div id="footerwrap">
 		<div class="container">
 			<div class="row centered">
-				<div class="col-lg-4">
+				<div class="col-lg-4" id="fa-foot">
 					<p><b>ART DIRECTOR | WEB DESIGNER | MUSIC PRODUCER</b></p>
 				</div>
 			
-				<div class="col-lg-4">
+				<div class="col-lg-4" id="fa-foot2">
 					<p>Dreaming for a living, in sunny Los Angeles, California since 1990 </p>
 				</div>
-				<div class="col-lg-4">
+				<div class="col-lg-4" id="fa-foot3">
 					<p>lifeaccordingtoblake@gmail.com</p>
 				</div>
 			</div>
@@ -120,5 +120,6 @@
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
   <script src="assets/js/bootstrap.min.js"></script>
+	<script src="assets/js/index.js"></script>
 </body>
 </html>
