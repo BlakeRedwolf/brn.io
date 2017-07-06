@@ -57,7 +57,6 @@ h1, h2, h3, h4, h5, h6 {
     color: #000000;
 }
 
-
 .navbar-brand {
 	font-weight: 700;
 	font-size: 36px;
@@ -183,7 +182,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #aboutwrap {	
-	background: url(../img/about.jpg) no-repeat center top;
+	background: url(../img/hustle.jpg) no-repeat center top;
 	margin-top: -70px;
 	padding-top: 250px;
 	text-align:center;
@@ -203,7 +202,9 @@ h1, h2, h3, h4, h5, h6 {
     background-size: cover;
 }
 
-
+#aboutheader {
+	padding-bottom: 25px;
+}
 
 
 /* Gallery */
