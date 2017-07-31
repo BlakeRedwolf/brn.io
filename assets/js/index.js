@@ -105,8 +105,16 @@ $( document ).ready(function() {
 		$(this).addClass("expandOpen");
 	});
 
-    $('#').click(function() {
-        $(this).addClass("");
+	$('.portbtn').click(function() {
+        $(this).addClass("expandOpen");
+	});
+	
+	$('#contactbtn').click(function() {
+        $(this).addClass("expandOpen");
+    });
+
+    $('#homebtn').click(function() {
+        $(this).addClass("expandOpen");
     });
 
 });

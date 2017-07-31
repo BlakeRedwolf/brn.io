@@ -1,117 +1,162 @@
 <!doctype html>
-<html lang="en">
+<html lang=EN>
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, initial-scale=1">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta charset=UTF-8>
+    <meta name=viewport content="width=device-width, initial-scale=1">
+    <meta http-equiv=X-UA-Compatible content=ie=edge>
+    <meta name=author content=BlakeRedwolf>
+    <meta name=Description content="Hi! I'm Blake aka 'Redwolf'. A Web developer, Graphic Designer, and UI/UX specialist from Los Angeles, California. Welcome to my online portfolio!">
+    <meta name=keywords content="Freelance, UI/UX Specialist, Illustrator, Web Animation, Responsive Web Development Specialist, Web Developer, Graphic Designer, React Developer, MERN Stack">
     <title>BRN.IO | The portfolio of Blake</title>
-    <meta name="description" content="Blakes Portfolio">
-    <meta name="author" content="Blake Redwolf Nelson">
+    <meta name=description content="Blake aka Redwolf's Portfolio">
+    <meta name=author content="Blake 'Redwolf' Nelson">
     <link rel="shortcut icon" href="assets/ico/favicon.ico">
     <link href="assets/css/bootstrap.css" rel="stylesheet">
-		<link href="assets/css/normalize.css" rel="stylesheet">
+    <link rel=stylesheet href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,700">
+    <meta name=msapplication-TileColor content=#ffffff>
+    <meta name=theme-color content=#ffffff>
+    <link rel=stylesheet href=assets/lib/animsition/dist/css/animsition.min.css>
+    <link rel=stylesheet href=assets/lib/fontawesome/css/font-awesome.min.css>
+    <link rel=stylesheet href=assets/lib/ionicons/css/ionicons.css>
+    <link rel=stylesheet href=assets/lib/magnific-popup/dist/magnific-popup.css>
+    <link rel=stylesheet type=text/css href=assets/lib/flexslider/flexslider.css>
+    <link rel=stylesheet type=text/css href=assets/lib/owlcarousel/owl-carousel/owl.carousel.css>
+    <link rel=stylesheet type=text/css href=assets/lib/owlcarousel/owl-carousel/owl.theme.css>
+    <link rel=stylesheet type=text/css href=assets/lib/owlcarousel/owl-carousel/owl.transitions.css>
+    <link href="assets/css/normalize.css" rel="stylesheet">
+    <link rel=stylesheet href=assets/css/main.css>
+    <link rel=stylesheet href=assets/css/colors/red.css>
     <link href="assets/css/style.css" rel="stylesheet">
     <link href="assets/css/font-awesome.min.css" rel="stylesheet">
-		<link href="assets/css/animations.css" rel="stylesheet">
+    <link href="assets/css/animations.css" rel="stylesheet">
+    <link href="assets/css/starcanvas.css" rel="stylesheet">
+
 </head>
 
-  <body>
+<body data-spy=scroll data-target=#main-nav-collapse data-offset=100 onload="init();">
+    <div id=zwrapper class="zwrapper animsition" data-animsition-in-class=fade-in data-animsition-in-duration=1000 data-animsition-out-class=fade-out data-animsition-out-duration=800 data-page-loader-text=Redwolf>
+        <section id=topNavBar class=nav-wrapper>
+            <div class=container-fluid>
+                <div id=menuzord class="menuzord transparent red">
+                    <a href=index.html class=menuzord-brand><img class="bigEntrance floating" style="height: 60px;" src="assets/img/brn.png" alt=blakeredwolf></a>
+                    <ul class=menuzord-menu>
+                        <li class="active floating" id="homebtn"><a href=index.html>Home</a></li>
+                        <li class="active floating" id="aboutbtn"><a href=about.html>About</a></li>
+                        <li class="floating" id="contactbtn"><a href=#contact>Contact</a></li>
+                        <li style="height: 1px" class=scrollable-fix></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
 
-    <!-- Static navbar -->
-    <div class="navbar navbar-default navbar-fixed-top" role="navigation">
-      <div class="container">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="index.html">BLAKE REDWOLF</a>
+        <header id=site-header class="site-header header-fullscreen wrapper-table particle-spider-header">
+            <div id="polygonalHeader" class="parallax-hero overlay-01" data-top="transform: translate3d(0px, 0px, 0px)" data-top-bottom="transform: translate3d(0px, -200px, 0px)" data-anchor-target=#site-header>
+                <canvas id="canvas" width="600" height="600"></canvas>
+            </div>
+            <div class="valign-center text-center">
+                <div class=container>
+                    <div class="slideDown intro">
+                        <h2>About Blake</h2>
+                        <div class=row>
+                            <div class="col-md-8 col-md-offset-2">
+                                <p>Bio - Knowledge - Expierence</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div><a href=#about class="btn-arrow-down-round btn-o onPageNav"><i class=ion-ios-arrow-down></i></a></header>
+
+        <section id=about class="section about-us bg white-bg">
+            <div class=container>
+                <div class=row>
+                    <div class="col-md-6 col-sm-12"><img src="assets/img/work.jpg" class="img-responsive center-block" alt="about-us image"></div>
+                    <div class="col-md-6 col-sm-12">
+                        <div class=section-content>
+                            <header class="section-heading mt-0">
+                                <h6></h6>
+                                <h4>About</h4>
+                            </header>
+                            <div class=section-content-desc>
+                                <p>As long as i can remember i loved to make, build, and create beautiful things. It's all i ever wanted to do. Growing up in Los Angeles, i was surrounded by amazing musicians, art, and artist. Eventually these things helped
+                                    shape who i am today. It's no secret that i love tetchnology, i grew up on it and i believe i would be nothing without it. My love for art and technology were the major factors behind me deciding to pursue a career
+                                    as a Web Developer and Graphic Designer. I believe that the key to happiness lies in doing what you love to do everyday.
+                                </p><br>
+                                <p>I studied Graphic Design &amp; Computer Science at Los Angeles Pierce College in Woodland Hills, California. Soon after i attended Oxford Institute of Technology in Tarzana, California to recieve formal training with Adobe
+                                    Creative Cloud Applications. Most recently i graduted from The Coding Boot Camp at UCLA, to further my programming skills.
+                                </p><br>
+                                <p>Some frontend technologies i use are HTML5, CSS3, JavaScript, ES6, PHP, Drupal, JQuery, Gulp, Grunt, NodeJS, ExpressJS, HandlebarsJS, React, Redux, Router, Webpack, Angular 4, and Sequelize. I am also familiar with SQL
+                                    databases, As well as Non-SQL databases such as MongoDB and Google's Firebase.
+
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+        </section>
+
+
+        <div id="social">
+            <div class="container">
+                <div class="row centered">
+                    <div class="col-lg-2">
+                        <a href="#"><i class="fa fa-dribbble" id="fa-float"></i></a>
+                    </div>
+                    <div class="col-lg-2">
+                        <a href="#"><i class="fa fa-facebook" id="fa-float2"></i></a>
+                    </div>
+                    <div class="col-lg-2">
+                        <a href="#"><i class="fa fa-twitter" id="fa-float3"></i></a>
+                    </div>
+                    <div class="col-lg-2">
+                        <a href="#"><i class="fa fa-linkedin" id="fa-float4"></i></a>
+                    </div>
+                    <div class="col-lg-2">
+                        <a href="#"><i class="fa fa-instagram" id="fa-float5"></i></a>
+                    </div>
+                    <div class="col-lg-2">
+                        <a href="#"><i class="fa fa-tumblr" id="fa-float6"></i></a>
+                    </div>
+
+                </div>
+            </div>
         </div>
-        <div class="navbar-collapse collapse">
-          <ul class="nav navbar-nav navbar-right">
-            <li><a href="index.html">Home</a></li>
-            <li class="active"><a href="about.html">About</a></li>
-            <li><a href="index.html#works">Works</a></li>
-          </ul>
-        </div><!--/.nav-collapse -->
-      </div>
-    </div>
 
 
-	<div id="aboutwrap">
-	    <div class="container">
-			<div class="row">
-				<div class="col-lg-6 col-lg-offset-3">
-				</div>
-			</div><! --/row -->
-	    </div> <!-- /container -->
-	</div><! --/aboutwrap -->
-	
-	<div class="container">
-		<div class="row centered mt mb">
-			<div class="col-lg-8 col-lg-offset-2">
-				<h2 id="aboutheader">BLAKE REDWOLF</h2>
-				<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
-				<p>It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-				<p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
-			</div>
+        <div id="footerwrap">
+            <div class="container">
+                <div class="row centered">
+                    <div class="col-lg-4" id="fa-foot">
+                        <p><b>WEB DEVELOPER - GRAPHIC DESIGNER</b></p>
+                    </div>
 
-		</div><! --/row -->
-	</div><! --/container -->
-	
-	<div id="social">
-		<div class="container">
-			<div class="row centered">
-				<div class="col-lg-2">
-					<a href="#"><i class="fa fa-dribbble" id="fa-float"></i></a>
-				</div>
-				<div class="col-lg-2">
-					<a href="#"><i class="fa fa-facebook" id="fa-float2"></i></a>
-				</div>
-				<div class="col-lg-2">
-					<a href="#"><i class="fa fa-twitter" id="fa-float3"></i></a>
-				</div>
-				<div class="col-lg-2">
-					<a href="#"><i class="fa fa-linkedin" id="fa-float4"></i></a>
-				</div>
-				<div class="col-lg-2">
-					<a href="#"><i class="fa fa-instagram" id="fa-float5"></i></a>
-				</div>
-				<div class="col-lg-2">
-					<a href="#"><i class="fa fa-tumblr" id="fa-float6"></i></a>
-				</div>
-			
-			</div><! --/row -->
-		</div><! --/container -->
-	</div><! --/social -->
+                    <div class="col-lg-4" id="fa-foot2">
+                        <p>Dreaming for a living, in sunny Los Angeles, California since 1990 </p>
+                    </div>
+                    <div class="col-lg-4" id="fa-foot3">
+                        <p>LIFEACCORDINGTOBLAKE@GMAIL.COM</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
 
-	<div id="footerwrap">
-		<div class="container">
-			<div class="row centered">
-				<div class="col-lg-4" id="fa-foot">
-					<p><b>ART DIRECTOR | WEB DESIGNER | MUSIC PRODUCER</b></p>
-				</div>
-			
-				<div class="col-lg-4" id="fa-foot2">
-					<p>Dreaming for a living, in sunny Los Angeles, California since 1990</p>
-				</div>
-				<div class="col-lg-4" id="fa-foot3">
-					<p>lifeaccordingtoblake@gmail.com</p>
-				</div>
-			
-			</div>
-		
-		</div>
-	</div><! --/footerwrap -->
-	
+        <script src=assets/lib/components-modernizr/modernizr.js></script>
+        <script src=assets/lib/jquery/dist/jquery.js></script>
+        <script src=assets/lib/bootstrap/dist/js/bootstrap.js></script>
+        <script src=assets/lib/imagesloaded/imagesloaded.pkgd.min.js></script>
+        <script src=assets/lib/animsition/dist/js/animsition.min.js></script>
+        <script src=assets/lib/magnific-popup/dist/jquery.magnific-popup.js></script>
+        <script src=assets/lib/flexslider/jquery.flexslider.js></script>
+        <script src=assets/lib/waypoints/lib/jquery.waypoints.min.js></script>
+        <script src=assets/lib/waypoints/lib/shortcuts/inview.min.js></script>
+        <script src=assets/lib/isotope/dist/isotope.pkgd.min.js></script>
+        <script src=assets/lib/owlcarousel/owl-carousel/owl.carousel.js></script>
+        <script src=assets/lib/countdown/dest/jquery.countdown.min.js></script>
+        <script src=assets/lib/vide/dist/jquery.vide.js></script>
+        <script src=assets/js/plugins.js></script>
+        <script src=assets/js/main.js></script>
+        <script src="assets/js/index.js"></script>
+        <script src="assets/js/starcanvasabout.js"></script>
+</body>
 
-
-   <!--  ================================================== -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
- 	 <script src="assets/js/bootstrap.min.js"></script>
-		<script src="assets/js/about.js"></script>
-  </body>
 </html>

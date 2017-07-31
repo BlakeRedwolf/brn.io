@@ -14,7 +14,8 @@
     <link rel="shortcut icon" href="assets/ico/favicon.ico">
     <link href="assets/css/bootstrap.css" rel="stylesheet">
     <link rel=stylesheet href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,700">
-
+    <meta name=msapplication-TileColor content=#ffffff>
+    <meta name=theme-color content=#ffffff>
     <link rel=stylesheet href=assets/lib/animsition/dist/css/animsition.min.css>
     <link rel=stylesheet href=assets/lib/fontawesome/css/font-awesome.min.css>
     <link rel=stylesheet href=assets/lib/ionicons/css/ionicons.css>
@@ -29,75 +30,348 @@
     <link href="assets/css/style.css" rel="stylesheet">
     <link href="assets/css/font-awesome.min.css" rel="stylesheet">
     <link href="assets/css/animations.css" rel="stylesheet">
+    <link href="assets/css/starcanvas.css" rel="stylesheet">
+
 </head>
 
-<body data-spy=scroll data-target=#main-nav-collapse data-offset=100>
-    <div>
-        <!-- Static navbar -->
-        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
-            <div class="container">
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-		<span class="sr-only">Toggle navigation</span>
-		<span class="icon-bar"></span>
-		<span class="icon-bar"></span>
-		<span class="icon-bar"></span>
-		</button>
-                    <a class="navbar-brand slideDown" href="index.html">BRN.IO</a>
-                </div>
-                <div class="navbar-collapse collapse">
-                    <ul class="nav navbar-nav navbar-right slideDown">
-                        <li class="active"><a href="index.html">Home</a></li>
-                        <li class="" id="aboutbtn"><a href="about.html">About</a></li>
-                        <li><a href="#works">Works</a></li>
+<body data-spy=scroll data-target=#main-nav-collapse data-offset=100 onload="init();">
+    <div id=zwrapper class="zwrapper animsition" data-animsition-in-class=fade-in data-animsition-in-duration=1000 data-animsition-out-class=fade-out data-animsition-out-duration=800 data-page-loader-text=Redwolf>
+        <section id=topNavBar class=nav-wrapper>
+            <div class=container-fluid>
+                <div id=menuzord class="menuzord transparent red">
+                    <a href=index.html class=menuzord-brand><img class="bigEntrance floating" style="height: 60px;" src="assets/img/brn.png" alt=blakeredwolf></a>
+                    <ul class=menuzord-menu>
+                        <li class="active floating" id="homebtn"><a href=#site-header>Home</a></li>
+                        <!-- <li class="portbtn"><a href=#works>Portfolio</a></li> -->
+                        <li class="active floating" id="aboutbtn"><a href=about.html>About</a></li>
+                        <li class="floating" id="contactbtn"><a href=#contact>Contact</a></li>
+                        <li style="height: 1px" class=scrollable-fix></li>
                     </ul>
                 </div>
-                <!--/.nav-collapse -->
             </div>
-        </div>
+        </section>
 
-        <div id="headerwrap">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-6 col-lg-offset-3">
-                        <h2>Hi, I'm</h2>
-                        <h1>Blake</h1>
-                        <h4>ART DIRECTOR | WEB DESIGNER | MUSIC PRODUCER</h4>
+        <header id=site-header class="site-header header-fullscreen wrapper-table particle-spider-header">
+            <div id="polygonalHeader" class="parallax-hero overlay-01" data-top="transform: translate3d(0px, 0px, 0px)" data-top-bottom="transform: translate3d(0px, -200px, 0px)" data-anchor-target=#site-header>
+                <canvas id="canvas" width="600" height="600"></canvas>
+            </div>
+            <div class="valign-center text-center">
+                <div class=container>
+                    <div class="slideDown intro">
+                        <h2>Blake Redwolf</h2>
+                        <div class=row>
+                            <div class="col-md-8 col-md-offset-2">
+                                <p>Web Developer - Graphic Designer</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <! --/row -->
-            </div>
-            <!-- /container -->
-        </div>
-        <! --/headerwrap -->
+            </div><a href=#about class="btn-arrow-down-round btn-o onPageNav"><i class=ion-ios-arrow-down></i></a></header>
 
-        <section id="works"></section>
-        <div class="container">
-            <div class="row centered mt mb">
-                <h1 class="slideUp">My Portfolio</h1>
+        <section id=about class="section about-us bg white-bg">
+            <div class=container>
+                <div class=row>
+                    <div class="col-md-6 col-sm-12"><img src="assets/img/work.jpg" class="img-responsive center-block" alt="about-us image"></div>
+                    <div class="col-md-6 col-sm-12">
+                        <div class=section-content>
+                            <header class="section-heading mt-0">
+                                <h6>Welcome to my online</h6>
+                                <h4>Portfolio</h4>
+                            </header>
+                            <div class=section-content-desc>
+                                <p>I am Blake Redwolf Nelson (26), born and raised in sunny Los Angeles, California. I am a Full Stack Developer with extensive expierence as a Graphic Designer.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+        </section>
 
-                <div class="col-lg-4 col-md-4 col-sm-4 gallery floating">
-                    <a href="work.html"><img src="assets/img/portfolio/folio01.png" class="img-responsive"></a>
-                </div>
-                <div class="col-lg-4 col-md-4 col-sm-4 gallery floating">
-                    <a href="work.html"><img src="assets/img/portfolio/folio02.png" class="img-responsive"></a>
-                </div>
-                <div class="col-lg-4 col-md-4 col-sm-4 gallery floating">
-                    <a href="work.html"><img src="assets/img/portfolio/folio03.png" class="img-responsive"></a>
-                </div>
-                <div class="col-lg-4 col-md-4 col-sm-4 gallery floating">
-                    <a href="work.html"><img src="assets/img/portfolio/folio04.png" class="img-responsive"></a>
-                </div>
-                <div class="col-lg-4 col-md-4 col-sm-4 gallery floating">
-                    <a href="work.html"><img src="assets/img/portfolio/folio05.png" class="img-responsive"></a>
-                </div>
-                <div class="col-lg-4 col-md-4 col-sm-4 gallery floating">
-                    <a href="work.html"><img src="assets/img/portfolio/folio06.png" class="img-responsive"></a>
+        <section id=services class="section white-bg">
+            <header>
+                <h6>My</h6>
+                <h4>Services</h4>
+            </header>
+            <div class=container>
+                <div class=row>
+                    <div class="col-md-4 col-sm-6">
+                        <div class=service-item>
+                            <div class=icon><i class=icon-paint_brush_wall_roller></i></div>
+                            <div class=service-desc>
+                                <h5>graphic design</h5>
+                                <p>Tired of your old and dated logos? Or just looking to give your company that visual flare that sets you apart? I will help you get there.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6">
+                        <div class=service-item>
+                            <div class=icon><i class=icon-mobile></i></div>
+                            <div class=service-desc>
+                                <h5>Branding</h5>
+                                <p>Branding is one of the most important aspects of any business, large or small, retail or B2B. An effective brand strategy gives you a major edge in increasingly competitive markets.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6">
+                        <div class=service-item>
+                            <div class=icon><i class=icon-computer_imac_thick></i></div>
+                            <div class=service-desc>
+                                <h5>Web Development</h5>
+                                <p>Professionally trained and certified, with extensive knowledge and expierence of some of the most recent ground breaking technologies, i have the skills it takes to build only the most cutting edge web applications.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6">
+                        <div class=service-item>
+                            <div class=icon><i class=icon-device_ipad></i></div>
+                            <div class=service-desc>
+                                <h5>Responsive Design</h5>
+                                <p>Responsive Web design is the approach that suggests that design and development should respond to the user's behavior and environment based on screen size, platform and orientation. The practice consists of a mix of flexible
+                                    grids and layouts, images and an intelligent use of CSS media queries.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6">
+                        <div class=service-item>
+                            <div class=icon><i class=icon-bargraph></i></div>
+                            <div class=service-desc>
+                                <h5>Seo expert</h5>
+                                <p>In a world where over 90% of online experiences start with a search engine, showing up on the front page of Google can be the deciding factor between a business that’s thriving and one that’s, well, bankrupt.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6">
+                        <div class=service-item>
+                            <div class=icon><i class=icon-genius></i></div>
+                            <div class=service-desc>
+                                <h5>UX Expert</h5>
+                                <p>User experience design (UXD or UED) is the process of enhancing customer satisfaction and loyalty by improving the usability, ease of use, and pleasure provided in the interaction between the customer and the product.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <! --/row -->
-        </div>
-        <! --/container -->
+        </section>
+
+        <section id=cta-1 class="section cta-big">
+            <div class=container>
+                <div class=row>
+                    <div class="col-md-12 text-center">
+                        <div class=cta-content>
+                            <h4>Thinking of your next project?</h4>
+                            <div class=btn-cal-group><a href=#pricing class="btn btn-cal-default onPageNav">Wanna chat?</a> <a href=# class="btn btn-cal-default-o-color">get a free quote</a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section white-bg b-b-0" id=process>
+            <header>
+                <h6>My</h6>
+                <h4>Process</h4>
+            </header>
+            <div class=section-content>
+                <div class=container>
+                    <div class=row>
+                        <div class=col-sm-3>
+                            <div class=card-process>
+                                <header class=first><span class=icon-basic_pencil_ruler_pen></span></header>
+                                <div class=card-block>
+                                    <h5>Planning</h5>
+                                    <p>Lets define your target audiences, set your goals and objectives, and decide what your application will require to run at optimal efficency.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class=col-sm-3>
+                            <div class=card-process>
+                                <header><span class=icon-software_paintroller></span></header>
+                                <div class=card-block>
+                                    <h5>Design</h5>
+                                    <p>Drawing from the information gathered up to this point, it’s time to determine the look and feel of your site. Express to me your vision for your application, my priority is to materialize that vision, and bring it
+                                        to life. </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class=col-sm-3>
+                            <div class=card-process>
+                                <header><span class=icon-basic_keyboard></span></header>
+                                <div class=card-block>
+                                    <h5>Coding</h5>
+                                    <p>The developmental stage is the point where the web site itself is created. At this time, I will take all of the individual graphic elements from the prototype and use them to create the actual, functional site.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class=col-sm-3>
+                            <div class=card-process>
+                                <header class=last><span class=icon-printer></span></header>
+                                <div class=card-block>
+                                    <h5>Publish</h5>
+                                    <p>Once i have recieved your final approval, its time to deliver the site. I offer domain name registration and web hosting services to all my clients. Final details include plugin installation for Wordpress or other CMS
+                                        driven web services, and SEO.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id=portfolio class="section works mild-bg">
+            <header>
+                <h6>My past</h6>
+                <h4>Projects &amp; Clients</h4>
+            </header>
+            <div class=container>
+                <div class=text-center>
+                    <ul class=portfolio-filter>
+                        <li class=active><a class="btn btn-sm" href=# data-filter=*>All</a></li>
+                        <li><a class="btn btn-sm" href=# data-filter=.webDesign>Web</a></li>
+                        <li><a class="btn btn-sm" href=# data-filter=.illustrations>Graphic Design</a></li>
+                        <li><a class="btn btn-sm" href=# data-filter=.multiMedia>Multimedia</a></li>
+                        <li><a class="btn btn-sm" href=# data-filter=.apps>Apps</a></li>
+                    </ul>
+                </div>
+                <div class="portfolio portfolio-masonry col-3">
+                    <div class="portfolio-item webDesign multiMedia">
+                        <div class=thumb><img src=assets/images/portfolio/masonry/col_3/1.jpg>
+                            <div class=portfolio-hover>
+                                <div class=vCenter>
+                                    <div class=action-btn><a href=assets/images/portfolio/masonry/col_3/1.jpg class=popup-link title="lightbox view"><i class=icon-basic_magnifier></i></a></div>
+                                    <div class=portfolio-description>
+                                        <h5><a href=assets/images/portfolio/masonry/col_3/1.jpg class=popup-link title="lightbox view">Lightbox View</a></h5>
+                                        <p><a href=#>Artworks</a></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-item photography illustrations">
+                        <div class=thumb>
+                            <div class=portfolio-slider>
+                                <ul class=slides>
+                                    <li>
+                                        <a href=assets/images/portfolio/masonry/col_3/4_1.jpg><img src=assets/images/portfolio/masonry/col_3/4_1.jpg></a>
+                                    </li>
+                                    <li>
+                                        <a href=assets/images/portfolio/masonry/col_3/4_2.jpg title="Awesome Lightbox"><img src=assets/images/portfolio/masonry/col_3/4_2.jpg></a>
+                                    </li>
+                                    <li>
+                                        <a href=assets/images/portfolio/masonry/col_3/4_3.jpg><img src=assets/images/portfolio/masonry/col_3/4_3.jpg></a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class=portfolio-hover>
+                                <div class=vCenter>
+                                    <div class=action-btn><a href=#><i class=icon-basic_picture_multiple></i></a></div>
+                                    <div class=portfolio-description>
+                                        <h5><a href=#>Gallary Lightbox</a></h5>
+                                        <p><a href=#>Photography</a></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-item webDesign apps">
+                        <div class=thumb><img src=assets/images/portfolio/masonry/col_3/7.jpg>
+                            <div class=portfolio-hover>
+                                <div class=vCenter>
+                                    <div class=action-btn><a class=popup-video href="https://www.youtube.com/watch?v=fTF-RadkIKo"><i class=icon-arrows_keyboard_right></i></a></div>
+                                    <div class=portfolio-description>
+                                        <h5><a class=popup-video href="https://www.youtube.com/watch?v=fTF-RadkIKo">Video lightbox</a></h5>
+                                        <p><a href=#>Videography</a></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-item photography apps">
+                        <div class=thumb><img src=assets/images/portfolio/masonry/col_3/2.jpg>
+                            <div class=portfolio-hover>
+                                <div class=vCenter>
+                                    <div class=action-btn><a href=portfolio__single_featured_carousel.html><i class=icon-basic_link></i></a></div>
+                                    <div class=portfolio-description>
+                                        <h5><a href=portfolio__single_featured_carousel.html>External link</a></h5>
+                                        <p><a href=#>Webdesign</a> , <a href=#>Illustration</a></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-item webDesign illustrations">
+                        <div class=thumb><img src=assets/images/portfolio/masonry/col_3/5.jpg>
+                            <div class=portfolio-hover>
+                                <div class=vCenter>
+                                    <div class=action-btn><a href=portfolio__single_featured_carousel.html><i class=icon-basic_link></i></a></div>
+                                    <div class=portfolio-description>
+                                        <h5><a href=portfolio__single_featured_carousel.html>External link</a></h5>
+                                        <p><a href=#>Webdesign</a> , <a href=#>Illustration</a></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-item apps multiMedia">
+                        <div class=thumb><img src=assets/images/portfolio/masonry/col_3/3.jpg>
+                            <div class=portfolio-hover>
+                                <div class=vCenter>
+                                    <div class=action-btn><a href=portfolio__single_featured_carousel.html><i class=icon-basic_link></i></a></div>
+                                    <div class=portfolio-description>
+                                        <h5><a href=portfolio__single_featured_carousel.html>External link</a></h5>
+                                        <p><a href=#>Webdesign</a> , <a href=#>Illustration</a></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-item photography illustrations">
+                        <div class=thumb><img src=assets/images/portfolio/masonry/col_3/8.jpg>
+                            <div class=portfolio-hover>
+                                <div class=vCenter>
+                                    <div class=action-btn><a href=assets/images/portfolio/masonry/col_3/8.jpg class=popup-link title="lightbox view"><i class=icon-basic_magnifier></i></a></div>
+                                    <div class=portfolio-description>
+                                        <h5><a href=assets/images/portfolio/masonry/col_3/8.jpg class=popup-link title="lightbox view">Lightbox View</a></h5>
+                                        <p><a href=#>Artworks</a></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-item webDesign illustrations">
+                        <div class=thumb><img src=assets/images/portfolio/masonry/col_3/9.jpg>
+                            <div class=portfolio-hover>
+                                <div class=vCenter>
+                                    <div class=action-btn><a href=assets/images/portfolio/masonry/col_3/9.jpg class=popup-link title="lightbox view"><i class=icon-basic_magnifier></i></a></div>
+                                    <div class=portfolio-description>
+                                        <h5><a href=assets/images/portfolio/masonry/col_3/9.jpg class=popup-link title="lightbox view">Lightbox View</a></h5>
+                                        <p><a href=#>Artworks</a></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-item webDesign multiMedia">
+                        <div class=thumb><img src=assets/images/portfolio/masonry/col_3/6.jpg>
+                            <div class=portfolio-hover>
+                                <div class=vCenter>
+                                    <div class=action-btn><a href=assets/images/portfolio/masonry/col_3/6.jpg class=popup-link title="lightbox view"><i class=icon-basic_magnifier></i></a></div>
+                                    <div class=portfolio-description>
+                                        <h5><a href=assets/images/portfolio/masonry/col_3/6.jpg class=popup-link title="lightbox view">Lightbox View</a></h5>
+                                        <p><a href=#>Artworks</a></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
 
         <div id="social">
             <div class="container">
@@ -122,50 +396,45 @@
                     </div>
 
                 </div>
-                <! --/row -->
             </div>
-            <! --/container -->
         </div>
-        <! --/social -->
+
 
         <div id="footerwrap">
             <div class="container">
                 <div class="row centered">
                     <div class="col-lg-4" id="fa-foot">
-                        <p><b>ART DIRECTOR | WEB DESIGNER | MUSIC PRODUCER</b></p>
+                        <p><b>WEB DEVELOPER - GRAPHIC DESIGNER</b></p>
                     </div>
 
                     <div class="col-lg-4" id="fa-foot2">
                         <p>Dreaming for a living, in sunny Los Angeles, California since 1990 </p>
                     </div>
                     <div class="col-lg-4" id="fa-foot3">
-                        <p>lifeaccordingtoblake@gmail.com</p>
+                        <p>LIFEACCORDINGTOBLAKE@GMAIL.COM</p>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-    <! --/footerwrap -->
+        </div>
 
-    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script> -->
-    <!-- <script src="assets/js/bootstrap.min.js"></script> -->
-    <script src=assets/lib/components-modernizr/modernizr.js></script>
-    <script src=assets/lib/jquery/dist/jquery.js></script>
-    <script src=assets/lib/bootstrap/dist/js/bootstrap.js></script>
-    <script src=assets/lib/imagesloaded/imagesloaded.pkgd.min.js></script>
-    <script src=assets/lib/animsition/dist/js/animsition.min.js></script>
-    <script src=assets/lib/magnific-popup/dist/jquery.magnific-popup.js></script>
-    <script src=assets/lib/flexslider/jquery.flexslider.js></script>
-    <!-- <script src=assets/lib/jquery.mb.ytplayer/dist/jquery.mb.YTPlayer.js></script> -->
-    <script src=assets/lib/waypoints/lib/jquery.waypoints.min.js></script>
-    <script src=assets/lib/waypoints/lib/shortcuts/inview.min.js></script>
-    <script src=assets/lib/isotope/dist/isotope.pkgd.min.js></script>
-    <script src=assets/lib/owlcarousel/owl-carousel/owl.carousel.js></script>
-    <script src=assets/lib/countdown/dest/jquery.countdown.min.js></script>
-    <script src=assets/lib/vide/dist/jquery.vide.js></script>
-    <script src=assets/js/plugins.js></script>
-    <script src=assets/js/main.js></script>
-    <script src="assets/js/index.js"></script>
+        <script src=assets/lib/components-modernizr/modernizr.js></script>
+        <script src=assets/lib/jquery/dist/jquery.js></script>
+        <script src=assets/lib/bootstrap/dist/js/bootstrap.js></script>
+        <script src=assets/lib/imagesloaded/imagesloaded.pkgd.min.js></script>
+        <script src=assets/lib/animsition/dist/js/animsition.min.js></script>
+        <script src=assets/lib/magnific-popup/dist/jquery.magnific-popup.js></script>
+        <script src=assets/lib/flexslider/jquery.flexslider.js></script>
+        <script src=assets/lib/waypoints/lib/jquery.waypoints.min.js></script>
+        <script src=assets/lib/waypoints/lib/shortcuts/inview.min.js></script>
+        <script src=assets/lib/isotope/dist/isotope.pkgd.min.js></script>
+        <script src=assets/lib/owlcarousel/owl-carousel/owl.carousel.js></script>
+        <script src=assets/lib/countdown/dest/jquery.countdown.min.js></script>
+        <script src=assets/lib/vide/dist/jquery.vide.js></script>
+        <script src=assets/js/plugins.js></script>
+        <script src=assets/js/main.js></script>
+        <script src="assets/js/index.js"></script>
+        <script src="assets/js/starcanvas.js"></script>
 </body>
 
 </html>

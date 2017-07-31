@@ -1,201 +1,201 @@
 .btn-cal-default {
-    background: #ff205a;
+    background: #16a085;
     color: #ffffff;
 }
 
 .btn-cal-default:hover,
 .btn-cal-default:focus,
 .btn-cal-default:active {
-    background-color: rgba(255, 32, 90, 0.7);
+    background-color: #16a085;
     color: #ffffff;
-    border-color: #ff205a;
+    border-color: #16a085;
 }
 
 .btn-cal-default-o-color {
-    color: #ff205a;
-    border-color: #ff205a;
+    color: #16a085;
+    border-color: #16a085;
     background: transparent;
 }
 
 .btn-cal-default-o-color:hover {
-    background-color: rgba(255, 32, 90, 0.7);
+    background-color: #16a085;
     color: #ffffff;
-    border-color: #ff205a;
+    border-color: #16a085;
 }
 
 .btn-hover-base:hover {
-    background-color: #ff205a;
+    background-color: #16a085;
     color: #ffffff;
 }
 
 .menuzord-menu>li>.megamenu {
-    border-color: #ff205a;
+    border-color: #16a085;
 }
 
 .top-cart-item-desc a:hover {
-    color: #ff205a;
+    color: #16a085;
 }
 
 .top-cart-item-image:hover {
-    border-color: #ff205a;
+    border-color: #16a085;
 }
 
 .menuzord-brand:hover,
 .menuzord-brand:focus,
 .menuzord-brand:active {
-    color: #ff205a;
+    color: #16a085;
 }
 
 .menuzord.red .menuzord-menu>li:hover>a,
 .menuzord.red .menuzord-menu ul.dropdown li:hover>a {
-    color: #ff205a;
+    color: #16a085;
 }
 
 .menuzord-menu>li.item-icon>a .badge {
-    background: #ff205a;
+    background: #16a085;
 }
 
 .menuzord-menu>li .navbar-form .input-group>input:focus,
 .menuzord-menu>li .navbar-form .input-group>input:active {
     border: none;
     outline: none;
-    border-bottom: 1px solid #ff205a;
+    border-bottom: 1px solid #16a085;
 }
 
 .mega-sub-menu>li>a:hover {
-    color: #ff205a;
+    color: #16a085;
 }
 
 .service-item .icon {
-    color: #ff205a;
+    color: #16a085;
 }
 
 .base-bg {
-    background-color: #ff205a;
+    background-color: #16a085;
 }
 
 .team-social li a:hover {
-    background: #ff205a;
+    background: #16a085;
 }
 
 .card-process:hover header span {
-    color: #ff205a;
-    border-color: #ff205a;
+    color: #16a085;
+    border-color: #16a085;
 }
 
 .card-process:hover header::before,
 .card-process:hover header::after {
-    background-color: #ff205a;
+    background-color: #16a085;
 }
 
 .progress-bar {
-    background-color: #ff205a;
+    background-color: #16a085;
 }
 
 .level .video-info .video-icon:hover,
 .level .video-info .video-icon:active,
 .level .video-info .video-icon:focus {
-    color: #ff205a;
+    color: #16a085;
 }
 
 .price-box {
-    border: 1px solid #ff205a;
+    border: 1px solid #16a085;
 }
 
 .price-box.featured {
-    border-bottom: 1px solid #ff205a;
+    border-bottom: 1px solid #16a085;
 }
 
 .blog .blog-post .blog-content h5 a:hover {
-    color: #ff205a;
+    color: #16a085;
 }
 
 .blog .blog-post .post-meta span.blog-catagory a:hover {
-    color: #ff205a;
+    color: #16a085;
 }
 
 .client-info p a {
-    color: #ff205a;
+    color: #16a085;
 }
 
 .social-icon li a:hover,
 .social-icon li a:focus,
 .social-icon li a:active {
-    color: #ff205a;
+    color: #16a085;
 }
 
 .widget-contact a:hover,
 .widget-contact a:focus,
 .widget-contact a:active {
-    color: #ff205a;
+    color: #16a085;
 }
 
 .portfolio-filter li.active a {
-    color: #ff205a;
+    color: #16a085;
 }
 
 .portfolio-hover {
-    background-color: rgba(255, 32, 90, 0.9);
+    background-color: #16a085;
 }
 
 .cta6>a:hover {
-    background-color: #ff205a;
+    background-color: #16a085;
 }
 
 .team-profile.hiring:hover a {
-    color: #ff205a;
+    color: #16a085;
 }
 
 .cta7 h5 span {
-    color: #ff205a;
+    color: #16a085;
 }
 
 .breadcrumb a:hover,
 .breadcrumb a:active,
 .breadcrumb a:focus {
-    color: #ff205a;
+    color: #16a085;
 }
 
 .cart-table a:hover {
-    color: #ff205a;
+    color: #16a085;
 }
 
 .panel-title:hover a {
-    color: #ff205a;
+    color: #16a085;
 }
 
 .sitemap ul li a:hover {
-    color: #ff205a;
+    color: #16a085;
 }
 
 .subscribe-form input:focus {
-    border-color: #ff205a;
+    border-color: #16a085;
 }
 
 .card-product .product-badge {
-    background-color: #ff205a;
+    background-color: #16a085;
 }
 
 .card-product .product-price {
-    color: #ff205a;
+    color: #16a085;
 }
 
 .single-product .breadcrumb a:hover {
-    color: #ff205a;
+    color: #16a085;
 }
 
 .single-product .product-price {
-    color: #ff205a;
+    color: #16a085;
 }
 
 .cd-nav h5 {
-    color: #ff205a;
+    color: #16a085;
 }
 
 .search-widget form input:focus {
-    border-color: #ff205a;
+    border-color: #16a085;
 }
 
 .search-widget form button:hover {
-    color: #ff205a;
+    color: #16a085;
 }
