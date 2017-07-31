@@ -343,7 +343,7 @@ input:focus {
 }
 
 .mild-bg {
-    background-color: #f3f3f3
+    background-color: #000000;
 }
 
 .white-bg {
@@ -9389,7 +9389,7 @@ h5 {
     padding: 28px;
     transition: all .25s ease-in-out;
     font-size: 44px;
-    background: #fff
+    background: #000000;
 }
 
 .card-process .card-block h5 {
