@@ -1,6 +1,7 @@
 .btn-cal-default {
-    background: #16a085;
-    color: #ffffff;
+    color: #16a085;
+    border-color: #16a085;
+    background: transparent;
 }
 
 .btn-cal-default:hover,
