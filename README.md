@@ -1,2 +1,2 @@
 # brn.io
-Simple materialize portfolio.
+### My online portfolio, with some bling.
